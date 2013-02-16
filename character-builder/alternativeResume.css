@@ -7,6 +7,14 @@ body {
 	min-height: 600px;
 	min-width: 810px;
 }
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+.cf:after {
+    clear: both;
+}
 .clear {
 	clear: both;
 }

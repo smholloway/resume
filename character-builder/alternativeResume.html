@@ -2,32 +2,11 @@
 <html>
 
 <head>
-  <title>Seth Holloway</title>
-
-	<meta content="Seth Holloway Alternative Resume"/>
-  <meta content="website"/>
-  <meta content="http://www.sethholloway.com/alternativeResume.html/"/>
-  <meta content="http://www.sethholloway.com/images/seth_in_bruges.jpg"/>
-  <meta property="description" content="Alternative resume for Seth Holloway"/> 
-
+  <title>Seth Holloway - Character Builder Resume</title>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta property="description" content="Seth Holloway's RPG-style character builder resume"/>
   <link rel="stylesheet" type="text/css" href="alternativeResume.css" />
-
 	<script src="http://code.jquery.com/jquery-latest.min.js"></script>
-
-	<script type="text/javascript">
-	$(document).ready(function(){
-		$('.talent').append('<em></em>');
-
-		$('.talent').hover(function() {
-		  $(this).find('em').animate({opacity: 'show', top: '-75'}, 10);
-		  var hoverText = $(this).find('.talent-description').html();
-		  $(this).find('em').html(hoverText);
-		}, function() {
-		  $(this).find('em').animate({opacity: 'hide', top: '-85'}, 10);
-		});
-	});
-	</script>
 </head>
 
 <body>
@@ -38,9 +17,9 @@
     <div id="top-box-description">
 			<p>
 				I am a technologist interested in web and mobile computing. 
-				Below is a summary of my current abilities and achievements. 
-				Items toward the bottom are more advanced skills, and skills are not related unless joined by an arrow.
-				Simply hover over the icon and read the pop-up description for an insight into the mind of Seth Holloway.
+				Below is my take on the RPG character builder applied to a resume.
+				Items toward the bottom are more advanced skills. Skills joined by an arrow should be related, with the top entry being a prerequisite for the latter.
+				Hover over each icon and read the pop-up description for an insight into the mind of Seth Holloway.
 			</p>
 			<p>
 				This was created by hand using HTML, CSS, and jQuery.
@@ -52,17 +31,16 @@
 
 	<br/>
 
-	<div id="talent-spec-top-box">
+	<div id="talent-spec-top-box" class="cf">
     <div class="talent-spec-box">
       Technical
     </div>
     <div class="talent-spec-box">
 			Teamwork 
 		</div>
-		<div class="clear"></div>
   </div>
 
-  <div id="talent-box">
+  <div id="talent-box" class="cf">
 	<!-- talent-box BEGIN -->
 
     <div id="talents-one">
@@ -70,7 +48,7 @@
 
       <!-- Row 1 -->
       <div class="talent" style="position: absolute; top:12px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-typing.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-typing.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Be Like Barbara Blackburn</span><br/>
 					<span class="talent-description-text">With hours a day at the keyboard, typing is paramount. I'm a touch typist capable of 100+ WPM.
@@ -79,7 +57,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:12px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-deadbug.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-deadbug.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Entomophobia</span><br/>
 					<span class="talent-description-text">I hate software bugs! Over the years I've learned to debug using log statements, splitting the state space, setting breakpoints, and beyond.
@@ -88,7 +66,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:12px; left:192px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-programming101.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-programming101.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Programming 101</span><br/>
 					<span class="talent-description-text">I took the plunge into programming (with Pascal) at age 14.
@@ -98,7 +76,7 @@
 
       <!-- Row 2 -->
       <div class="talent" style="position: absolute; top:68px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-design.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-design.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Shiny!</span><br/>
 					<span class="talent-description-text">Shiny sells, and an elegant design helps usability. I've combined natural talent with sustained effort to improve my design skills.
@@ -107,7 +85,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:68px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-nerd.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-nerd.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Analyze Data</span><br/>
 					<span class="talent-description-text">Between my PhD, coursework, and several different jobs, I've become adept at presenting and analyzing data.
@@ -116,7 +94,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:68px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-bug.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-bug.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Bugs Happen</span><br/>
 					<span class="talent-description-text">Even the most tested code will have bugs. I've learned to deal with with intermittent bugs.
@@ -126,7 +104,7 @@
 
       <!-- Row 3 -->
       <div class="talent" style="position: absolute; top:124px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-roboto.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-roboto.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Domo Arigato, Mr. Roboto</span><br/>
 					<span class="talent-description-text">I have automated common programming functions using Ant, maven, IDE features, and various script files.
@@ -135,7 +113,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:124px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-backup.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-backup.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Back it Up!</span><br/>
 					<span class="talent-description-text">Version control allows collaboration, archives changes, conserves disk space, and prevents accidental deletions. 
@@ -146,7 +124,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:124px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-test.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-test.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">How to Test Code</span><br/>
 					<span class="talent-description-text">Unlock the secrets of when, how, and how much to test.
@@ -158,7 +136,7 @@
 
       <!-- Row 4 -->
       <div class="talent" style="position: absolute; top:180px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-experiments.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-experiments.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Conducting Experiments</span><br/>
 					<span class="talent-description-text">Learn to test the whole system, its interactions and performance, and its users.
@@ -168,7 +146,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:180px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-book.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-book.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Who Wrote This Crap?</span><br/>
 					<span class="talent-description-text">Legacy code is pervasive, and it's rarely as good as what we would write ;-) 
@@ -178,7 +156,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:180px; left:192px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-polyglot.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-polyglot.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Polyglot</span><br/>
 					<span class="talent-description-text">I have used many languages and I'm fully confident that I can quickly learn others.
@@ -194,7 +172,7 @@
 
       <!-- Row 5 -->
       <div class="talent" style="position: absolute; top:236px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-huh.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-huh.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Oh My God! What Does it Mean?</span><br/>
 					<span class="talent-description-text">80% of a newcomers time is spent learning the system, so documentation and clean code is very important!
@@ -205,7 +183,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:236px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-time.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-time.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Can You Have This Done by Tomorrow?</span><br/>
 					<span class="talent-description-text">Learning to estimate development efforts helps you and your project manager.
@@ -216,7 +194,7 @@
 
       <!-- Row 6 -->
       <div class="talent" style="position: absolute; top:292px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-deadlines.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-deadlines.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Managing Deadlines</span><br/>
 					<span class="talent-description-text">With deadlines looming, something has to give. 
@@ -226,7 +204,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:292px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-fancy.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-fancy.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">You One of Them Fancy College Boys?</span><br/>
 					<span class="talent-description-text">You're wildly educated, but you must wield your hammer with care!
@@ -237,7 +215,7 @@
 
       <!-- Row 7 -->
       <div class="talent" style="position: absolute; top:348px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t1-like.jpg"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t1-like.jpg"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">They Like Me! They Really Like Me!</span><br/>
 					<span class="talent-description-text">I have worked on applications and sites used by tens to thousands of people, but I would like to have a wider reach.
@@ -267,7 +245,7 @@
 
       <!-- Row 1 -->
       <div class="talent" style="position: absolute; top:12px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-communicate.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-communicate.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Communicate Effectively with Peers</span><br/>
 					<span class="talent-description-text">Too abstract! Too concrete! Too much information!
@@ -277,7 +255,7 @@
 			</div>
 
      <div class="talent" style="position: absolute; top:12px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-twobabies.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-twobabies.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">It Takes Two (or More), Baby</span><br/>
 					<span class="talent-description-text">We can only accomplish so much alone; ultimately, it takes a village.
@@ -287,7 +265,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:12px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-peoplepower.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-peoplepower.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Books Are Good, People Are Great</span><br/>
 					<span class="talent-description-text">
@@ -299,7 +277,7 @@
 
       <!-- Row 2 -->
       <div class="talent" style="position: absolute; top:68px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-trust.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-trust.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Trust is Earned</span><br/>
 					<span class="talent-description-text">
@@ -310,7 +288,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:68px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-sharing.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-sharing.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Some People Don't Share</span><br/>
 					<span class="talent-description-text">
@@ -321,7 +299,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:68px; left:188px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-networking.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-networking.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Networking Means Being Nice</span><br/>
 					<span class="talent-description-text">
@@ -332,7 +310,7 @@
 
       <!-- Row 3 -->
       <div class="talent" style="position: absolute; top:124px; left:188px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-change.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-change.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Change is the Only Constant</span><br/>
 					<span class="talent-description-text">
@@ -343,7 +321,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:124px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-rest.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-rest.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Gotta Rest Sometime</span><br/>
 					<span class="talent-description-text">
@@ -355,7 +333,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:124px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-bullshit.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-bullshit.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Bullshit Detector</span><br/>
 					<span class="talent-description-text">
@@ -367,7 +345,7 @@
 
       <!-- Row 4 -->
       <div class="talent" style="position: absolute; top:124px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-proper.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-proper.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Communicate Properly</span><br/>
 					<span class="talent-description-text"> 
@@ -378,7 +356,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:180px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-sselogo.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-sselogo.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Create an Organization</span><br/>
 					<span class="talent-description-text">
@@ -391,7 +369,7 @@
 
      <!-- Row 5 -->
       <div class="talent" style="position: absolute; top:236px; left:12px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-greek.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-greek.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">It's Greek to Me</span><br/>
 					<span class="talent-description-text">
@@ -402,7 +380,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:236px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-manage.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-manage.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Manage a Team</span><br/>
 					<span class="talent-description-text">
@@ -414,7 +392,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:236px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-table.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-table.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">The Other Side of the Table</span><br/>
 					<span class="talent-description-text">
@@ -427,7 +405,7 @@
 
       <!-- Row 6 -->
       <div class="talent" style="position: absolute; top:292px; left:72px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-vision.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-vision.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Visionary</span><br/>
 					<span class="talent-description-text">
@@ -437,7 +415,7 @@
 			</div>
 
       <div class="talent" style="position: absolute; top:292px; left:132px">
-        <a href="#"><img class="talent-icon" src="images/icons/t2-disagree.png"></a>
+        <a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-disagree.png"></a>
         <div class="talent-description">
           <span class="talent-description-name">Disagree Agreeably</span><br/>
           <span class="talent-description-text">
@@ -449,7 +427,7 @@
 
       <!-- Row 7 -->
       <div class="talent" style="position: absolute; top:348px; left:132px">
-				<a href="#"><img class="talent-icon" src="images/icons/t2-passion.png"></a>
+				<a href="#"><img class="talent-icon" width="39" height="39" src="images/icons/t2-passion.png"></a>
 				<div class="talent-description">
 					<span class="talent-description-name">Work Passionately</span><br/>
 					<span class="talent-description-text">Life is short! 
@@ -478,9 +456,6 @@
 		<!-- talents-two END -->
   </div>
 
-  <div class="clear"></div>
-	<br/>
-
 	<!-- talent-box END -->
 	</div>
 
@@ -489,6 +464,20 @@
  	    © Seth Holloway
 		</div>
 	</div>
+
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('.talent').append('<em></em>');
+
+		$('.talent').hover(function() {
+		  $(this).find('em').animate({opacity: 'show', top: '-75'}, 10);
+		  var hoverText = $(this).find('.talent-description').html();
+		  $(this).find('em').html(hoverText);
+		}, function() {
+		  $(this).find('em').animate({opacity: 'hide', top: '-85'}, 10);
+		});
+	});
+	</script>
 
 </body>
 </html>
