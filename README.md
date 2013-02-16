@@ -1,4 +1,4 @@
-# Seth Holloway's Resumes
+# Seth Holloway's Résumés
 
 Tracking a few different approaches that I have taken to resumes.
 
