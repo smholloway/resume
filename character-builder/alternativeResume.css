@@ -1,0 +1,242 @@
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	background: #333333;
+	height: 100%;
+	min-height: 600px;
+	min-width: 810px;
+}
+.clear {
+	clear: both;
+}
+#main-box {
+	margin: auto;
+	width: 80%;
+	min-width: 800px;
+	height: 80%;
+	min-height: 570px;
+	padding: 5px;
+	border: 1px solid #202020;
+	background: #404040;
+	border-radius: 6px;
+}
+#top-box {
+	margin: auto;
+	width: 96%;
+	min-width: 538px;
+	background: #303030;
+	color: #ffffff;
+	padding: 10px;
+	border: 1px solid #515151;
+	-moz-box-shadow: 2px 2px 3px #000;
+	-webkit-box-shadow: 2px 2px 3px #000;
+	box-shadow: 2px 2px 3px #000;
+}
+#top-box-description {
+	margin: auto;
+	width: 96%;
+	min-width: 500px;
+	color: #ffffff;
+	padding: 2px;
+}
+#top-box-description a {
+	color: inherit;
+}
+#top-box h1 {
+	font-size: 24px;
+	text-align: center;
+	font-variant: small-caps;
+}
+#bottom-box {
+	margin: auto;
+	min-width: 800px;
+	width: 80%;
+	text-align: right;
+	padding: 10px;
+	color: #ffffff;
+	font-size: 11px;
+	font-variant: small-caps;
+}
+#fb-root {
+	padding: 5px;
+	float: right;
+}
+.name {
+	float: right;
+	width: 150px;
+	text-align: right;
+	color: white;
+}
+#talent-spec-top-box {
+	margin: auto;
+	width: 494px;
+	padding: 0;
+}
+.talent-spec-box {
+	margin: 0px 1px;
+	float: left;
+	width: 245px;
+	height: 24px;
+	line-height: 24px;
+	font-size: 14px;
+	text-align: center;
+	display: block;
+	font-variant: small-caps;
+	background: #303030;
+	color: white;
+	-moz-border-radius-topright: 2em;
+	-moz-border-radius-topleft: 2em;
+	-webkit-border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+#talent-box {
+	margin: auto;
+	width: 492px;
+	width: 494px;
+	min-width: 492px;
+	height: 404px;
+	border: 1px solid #515151;
+}
+#talents-one {
+	position: relative;
+	margin: auto;
+	width: 246px;
+	float: left;
+	background: #95CBE9;
+	background-repeat: no-repeat;
+	height: 100%;
+} 
+#talents-two {
+	position: relative;
+	margin: auto;
+	width: 246px;
+	float: right;
+	background: #DE9D7F;
+	background: #AFD775;
+	background-repeat: no-repeat;
+	height: 100%;
+} 
+.talent {
+	display: block;
+	position: absolute;
+	visibility: visible;
+	height: 39px;
+	width: 39px;
+}
+.talent-icon {
+	display: inline;
+	width: 39px;
+	height: 39px;
+	border: 2px solid #707070;
+	border: 2px solid #555555;
+	border-radius: 5px 5px;
+	z-index: 4;
+}
+.talent-icon-full {
+	display: inline;
+	width: 39px;
+	height: 39px;
+	border: 2px solid gold;
+	border: 2px solid #707070;
+	border-radius: 5px 5px;
+	z-index: 4;
+}
+.talent-rank-spendable {
+	font-size: 10px;
+	text-align: center;
+	background-color: black;
+	border: 1px solid gold;
+	border: 1px solid #EFD279;
+	border-radius: 5px 5px;
+	position: absolute;
+	left: 23px;
+	top: 30px;
+	width: 28px;
+	padding-left: 1px;
+	color: lime;
+	color: #44BAC8;
+	color: #AFD775;
+	color: #EFD279;
+	visibility: visible;
+}
+.talent-rank-spendable-full {
+	font-size: 10px;
+	text-align: center;
+	background-color: black;
+	border: 1px solid gold;
+	border-radius: 5px 5px;
+	position: absolute;
+	left: 26px;
+	top: 30px;
+	width: 28px;
+	padding-left: 1px;
+	color: gold;
+	visibility: visible;
+}
+.talent-description {
+	display: none;
+}
+div.talent-branch-arrow {
+	background-image: url(images/arrows-ver.png);
+	background-position: 21px;
+	height: 8px;
+	width: 21px;
+}
+div.talent-branch-line {
+	background-image: url(images/branches-ver.png);
+	background-position: -21px;
+	background-repeat: repeat-y;
+	width: 21px;
+}
+
+.talent em {
+	background: #1f1f1f; 
+	width: 240px;
+	position: absolute;
+	top: -115px;
+	left: 44px;
+	padding: 10px;
+	font-style: normal;
+	display: none;
+	z-index: 7;
+	border: 1px solid #f1f1f1;
+	border-radius: 5px 5px;
+}
+.talent-description-name {
+	color: gold;
+}
+.talent-description-rank {
+	color: lime;
+}
+.talent-description-text {
+	color: white;
+}
+.beginner {
+	float: left;
+	background: #1f1f1f; 
+	width: 60px;
+	line-height: 25px;
+	color: white;
+	border: 1px solid #f1f1f1;
+	border-radius: 5px 5px;
+	text-align: center;
+	position: relative;
+	top: 40px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+}
+.expert {
+	float: left;
+	background: #1f1f1f; 
+	width: 60px;
+	line-height: 25px;
+	color: white;
+	border: 1px solid #f1f1f1;
+	border-radius: 5px 5px;
+	text-align: center;
+	position: relative;
+	top: 340px;
+	-webkit-transform: rotate(-90deg);
+	-moz-transform: rotate(-90deg);
+}
