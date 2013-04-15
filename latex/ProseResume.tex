@@ -1,0 +1,246 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks=true,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=NavyBlue,%
+    urlcolor=NavyBlue,
+    breaklinks=true
+}
+\urlstyle{same}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[3]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+      {\url{#2}}\\ \smallskip 
+      {\href{mailto:#3}{#3}}\\ \smallskip
+		\end{center}
+	\end{changemargin}
+}
+
+\newcommand{\jobtitle}[3]{
+	\textbf{#1}, \emph{#2} \hfill \emph{#3}\\
+}
+
+\newcommand{\jobdescription}[1]{
+	\begin{changemargin}{0.15in}{0.15in}
+    \smallskip
+		{#1}
+    \medskip
+	\end{changemargin}
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Seth Michael Holloway, PhD}{http://www.SethHolloway.com/}{Seth@SethHolloway.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Personal Statement}
+
+\begin{body}
+	\vspace{14pt}
+  I am an experienced, motivated, and business-savvy software engineer with a passion for creating great products and leading teams.
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} Java, HTML/CSS, JavaScript, Node.js, Ruby, Ruby on Rails, Shell, Python, SQL, \LaTeX\\
+	\medskip
+	\emph{\textbf{Selected Technologies:}}{} jQuery, Heroku, Git, SVN, TDD, JUnit, agile, Windows, Mac OS X, *nix\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Career History}
+
+\begin{body}
+	\vspace{14pt}
+
+  \jobtitle{Senior Software Engineer}{Blackbaud}{Fall 2011 - Present}
+  \jobdescription{
+    I work on a team developing and maintaining our SasS CRM software: Convio Luminate CRM, Online, and Analytics. The code base is over 3 million lines. I successfully lead a cross-functional team that took several features from idea to market. The deliverable delighted the customer and grew the business through new contracts. I actively contribute to the frontend (HTML, CSS, JavaScript, responsive design), backend (Java, Salesforce.com's Apex, SQL). Outside of my normal duties, I created a status board that displays information about the current iteration. I also organized a weekly lecture series to quickly educate people on software development topics, including HTML, CSS, JavaScript, and clean code.
+  }
+
+	\jobtitle{Founder, Principal}{Vaczoway Solutions Incorporated}{Summer 2011 - Present}
+  \jobdescription{
+    I began my own lean startup, Vaczoway, to create and deliver nontrivial technical solutions to customers. Vaczoway operates in various spaces including the oil and gas industry, search engine optimization (SEO), and entertainment. We created Oilfield Intelligence using Ruby on Rails to deliver niche reviews. For SEO, we used various techniques to increase traffic to hundreds of unique visitors per month in four months. In all, we use whatever tools are required to get the job done; some of those tools include HTML, CSS, JavaScript for the frontend, Ruby on Rails, Node.js, and PHP for the backend, and Heroku, Google App Engine, and self-managed servers for deployment. Finally, as Principal of Vaczoway, I  employed soft-skills like customer interviews, market research, product management and project management.
+  }
+
+	\jobtitle{Software Engineer (Part-time)}{IBM (Lotus)}{Fall 2006 - Spring 2011}
+  \jobdescription{
+    Architected, developed and maintained an automated BVT system using STAF/STAX, Python, bash, and Rational Functional Tester (RFT), saving over 80 person-hours per week. Developed an automated test results summary web app that provided an instant summary in a central location, reducing data collection time, eliminating human errors, and improving team communication. Optimized and componentized the build, significantly increasing build’s speed (from eight hours to four hours per build), consumability, and maintainability.
+  }
+
+	\jobtitle{Research Assistant, Teaching Assistant}{Mobile \& Pervasive Computing Group}{Spring 2006 - Spring 2011}
+  \jobdescription {
+    Researched and developed a novel smart home using Java and Ruby on Rails. I created a usable end-user programming framework that allowed people of all backgrounds to encode rules. The backend was built on a cutting-edge API architecture. I also TA'd Project Management. In addition to my official jobs, I mentored numerous students and managed several projects, and created several websites, including \emph{http://mpc.ece.utexas.edu/}, \emph{http://www.edge.utexas.edu/se/}, \emph{http://www.edge.utexas.edu/sse/}.
+  }
+
+	\jobtitle{Extreme Blue (Technical Intern)}{IBM}{Summer 2006}
+  \jobdescription {
+    I participated in an agile four-person biz/tech team to create an innovative online consultant scheduling system using Java and Ajax. I applied object-oriented design techniques to create a robust backend and beautiful frontend. In order to build the right thing, I performed market research and numerous customer interviews. The project culminated in a presentation given to over 250 people, including senior IBM executives.
+  }
+
+	\jobtitle{Software Engineer (Intern)}{IBM (Tivoli)}{Summer 2005 - Spring 2006}
+  \jobdescription {
+    After manually installing a software agent on numerous machines, I architected and created a silent installation program for rapid, error-free deployment across multiple operating systems. I also provided DevOps support allowing developers to focus solely on development.
+  }
+
+	\jobtitle{Campus Liaison}{Texas Instruments}{Spring 2005}
+  \jobdescription {
+    As an evangelist for Texas Instruments, I scheduled and presented at recruiting events. My efforts increased TI's visibility on campus and led to hundreds of new applicants.
+  }
+
+	\jobtitle{Product Engineer (Co-op)}{Texas Instruments}{Fall 2003 - Fall 2004}
+  \jobdescription {
+    In my time at Texas Instruments I developed statistical algorithms to improve chip yield and quickly identify process problems. These algorithms were integrated into an extensive web app that automated data analysis and common engineering tasks. I also trained full-time engineers on relevant data analysis techniques.
+  }
+
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Ph.D. Software Engineering --- Adviser: Dr. Christine Julien}{} \hfill \emph{May 2011}{} \\
+	\emph{The University of Texas at Austin}, Austin, TX{} \\
+	Dissertation: ``Simplifying the Programming of Intelligent Environments'' (usability in smart homes)\\
+  \medskip
+	\textbf{M.S.E. Software Engineering}{} \hfill \emph{May 2007}{} \\
+	\emph{The University of Texas at Austin}, Austin, TX{} \\
+	Thesis: ``Developing Collaborative Applications Using Sliverware''\\
+  \medskip
+	\textbf{B.S. Electrical \& Computer Engineering} \hfill \emph{August 2005} \\
+	\emph{The University of Texas at Austin}, Austin, TX\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Awards and Honors}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Golden Globe for Responsive Redesign of TeamRaiser Donation Forms}, Blackbaud \hfill{} \emph{2012}\\
+	\medskip
+	\textbf{Thrust Fellow}, The University of Texas at Austin \hfill{} \emph{2005 - 2009}\\
+	\medskip
+	\textbf{U.S. Patent \#8155948}, ``Method and system to determine user skill using natural language input'' \hfill{} \emph{2012} \\ 
+	\medskip
+	\textbf{MCD Fellow}, The University of Texas at Austin \hfill{} \emph{2005 - 2007}\\
+	\medskip
+	\textbf{College Scholar}, The University of Texas at Austin \hfill{} \emph{2003 - 2005}\\
+	\medskip
+	\textbf{Runner-up}, Moore Elementary Recycling Slogan Contest
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Leadership Activities}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Creator, Lecturer}, Summer of Learning and Teaching \hfill {} \emph{Summer 2012 - Present}\\
+	\medskip
+	\textbf{Co-organizer}, Talk Tuesdays \hfill {} \emph{Fall 2012 - Present}\\
+	\medskip
+	\textbf{Co-founder, President}, Students in Software Engineering (SSE) \hfill {} \emph{Summer 2008 - Spring 2011}\\
+	\medskip
+	\textbf{Mentor}, Undergraduate and graduate student mentor \hfill{} \emph{Fall 2007 - Spring 2011}\\
+	\medskip
+	\textbf{Co-founder}, Austin Software Mentorship (ASM) \hfill{} \emph{Fall 2009}\\
+	\medskip
+	\textbf{Campus Liaison}, Texas Instruments' liaison to UT \hfill{} \emph{Spring 2005}\\
+	\medskip
+	\textbf{President}, Texas Instruments Co-op Social Committee \hfill{} \emph{Summer \& Fall 2004}\\
+\end{body}
+
+\end{document}
