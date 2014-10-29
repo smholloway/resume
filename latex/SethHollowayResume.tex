@@ -1,0 +1,355 @@
+\documentclass[9pt]{article}
+\usepackage{fullpage}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[]{hyperref}
+\hypersetup{
+    colorlinks=true,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=NavyBlue,%
+    urlcolor=NavyBlue,
+    breaklinks=true
+}
+\urlstyle{same}
+
+\leftmargin=0.25in
+\oddsidemargin=0.25in
+\textwidth=6.0in
+\topmargin=-0.25in
+\textheight=9.25in
+
+\raggedright
+
+\pagenumbering{arabic}
+
+\def\bull{\vrule height 0.8ex width .7ex depth -.1ex }
+
+% DEFINITIONS FOR RESUME
+
+\newenvironment{changemargin}[2]{%
+  \begin{list}{}{%
+    \setlength{\topsep}{0pt}%
+    \setlength{\leftmargin}{#1}%
+    \setlength{\rightmargin}{#2}%
+    \setlength{\listparindent}{\parindent}%
+    \setlength{\itemindent}{\parindent}%
+    \setlength{\parsep}{\parskip}%
+  }%
+  \item[]}{\end{list}
+}
+
+\newcommand{\lineover}{
+	\begin{changemargin}{-0.05in}{-0.05in}
+		\vspace*{-8pt}
+		\hrulefill \\
+		\vspace*{-2pt}
+	\end{changemargin}
+}
+
+\newcommand{\header}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\scshape{#1}\\
+  	\lineover
+	\end{changemargin}
+}
+
+\newcommand{\contact}[3]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+		\begin{center}
+			{\Large \scshape {#1}}\\ \smallskip
+      {\url{#2}}\\ \smallskip
+			{\url{#3}}\\
+		\end{center}
+	\end{changemargin}
+}
+
+\newcommand{\summary}[1]{
+	\begin{changemargin}{-0.5in}{-0.5in}
+    \smallskip
+		{#1}
+	\end{changemargin}
+}
+
+\newcommand{\jobdescription}[1]{
+	\begin{changemargin}{0.15in}{0.15in}
+    \smallskip
+		{#1}
+    \medskip
+	\end{changemargin}
+}
+
+\newcommand{\jobtitle}[3]{
+	\textbf{#1}, \emph{#2} \hfill \emph{#3}\\
+}
+
+\newenvironment{body} {
+	\vspace*{-16pt}
+	\begin{changemargin}{-0.25in}{-0.5in}
+  }	
+	{\end{changemargin}
+}	
+
+\newcommand{\school}[4]{
+	\textbf{#1} \hfill \emph{#2\\}
+	#3\\ 
+	#4\\
+}
+
+% END RESUME DEFINITIONS
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Name
+\contact{Seth Michael Holloway, PhD}{http://www.sethholloway.com/}{seth@sethholloway.com}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Objective
+\header{Personal Statement}
+
+\begin{body}
+	\vspace{14pt}
+  Experienced and business-savvy software engineer passionate about creating great products and leading teams.
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Skills
+\header{Skills}
+
+\begin{body}
+	\vspace{14pt}
+	\emph{\textbf{Programming:}}{} Python, Django, Java, HTML, CSS, JavaScript, Ruby on Rails, Shell, SQL, NoSQL\\
+	\medskip
+	\emph{\textbf{Technologies and Methodologies:}}{} Google App Engine, Heroku, jQuery, Git, TDD, JUnit, agile, lean\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experience
+\header{Career History}
+
+\begin{body}
+	\vspace{14pt}
+
+
+%%% Toopher %%%
+  \jobtitle{Principal Software Engineer, Evangelist}{Toopher}{October 2014 - Present}
+  \jobtitle{Senior Software Engineer, Evangelist}{Toopher}{May 2013 - October 2014}
+  \jobdescription{
+    \begin{itemize} \itemsep -0pt  % reduce space between items
+      \item Developed and maintained software for Toopher's location-based two-factor authentication, including language libraries (Python, Ruby, PHP, Perl, Java, .NET), mobile apps (Android, iOS), and the backend API (Python, Django, Google App Engine)
+      \item Spread the word about Toopher through presentations and training sessions, white papers, blog posts, comments, and face-to-face client interactions
+      \item Implemented self-service billing system using Stripe allowing the company to make money with little to no manual effort
+      \item Owned developer experience (DX), including \url{https://dev.toopher.com/} and our language libraries
+      \item Mentored and guided multiple interns and peers
+      \item Sped tests up by 300\% ensuring they continued to be run and provide value
+    \end{itemize}
+  }
+
+
+%%% Blackbaud %%%
+  \jobtitle{Senior Software Engineer, Team Lead}{Blackbaud}{October 2011 - May 2013}
+  \jobdescription{
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+  		\item Developed and maintained SaaS CRM software: Convio Luminate CRM, Online, and Analytics
+      \item Contributed to frontend (Visualforce, HTML, CSS, JavaScript, responsive design), backend (Java, JEE/J2EE, Salesforce, Apex, SOQL, SQL), and quality assurance (Ruby, RSpec, and Watir)
+      \item Led a team on client-facing project, delighting the customer and securing additional contracts
+      \item Organized a weekly lecture series to quickly educate people on software development topics, including HTML, CSS, JavaScript, and clean code
+      \item Created an engineering status board that displays the current build condition and progress
+  	\end{itemize}
+  }
+
+
+%%% Founder and CTO at Vaczoway %%%
+  \jobtitle{Co-founder, CTO}{Vaczoway Solutions Incorporated}{May 2011 - Present}
+  \jobdescription{
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+  		\item Created web and mobile applications using a range of technologies, frameworks, and platforms including Ruby on Rails, Facebook, iOS, Java, HTML/CSS, JavaScript, PHP, Python, MySQL, SQLite, PostgreSQL, MongoDB, node.js, Google App Engine, Heroku, Amazon EC2/AWS
+  		\item Improved search engine ranking (SEO) of web properties to increase traffic using machine learning
+  		\item Performed customer interviews, market research, product management and project management duties
+      \item See \url{http://www.oilfieldintelligence.com/}, \url{http://www.swiftgive.com/}
+  	\end{itemize}
+  }
+
+% I co-founded Vaczoway to create and deliver nontrivial technical solutions to customers. Vaczoway operates in various spaces including the oil and gas industry, search engine optimization (SEO), and entertainment. We created Oilfield Intelligence using Ruby on Rails to deliver niche reviews. For SEO, we used various techniques to increase traffic to hundreds of unique visitors per month in four months. In all, we use whatever tools are required to get the job done; some of those tools include HTML, CSS, JavaScript for the frontend, Ruby on Rails, Node.js, and PHP for the backend, and Heroku, Google App Engine, and self-managed servers for deployment. Finally, as Principal of Vaczoway, I  employed soft-skills like customer interviews, market research, product management and project management.
+
+
+%%% IBM %%%
+	\jobtitle{Software Engineer}{IBM (Lotus)}{August 2006 - June 2011}
+  \jobdescription{
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+  		\item Architected, developed and maintained an automated BVT system using STAF/STAX, Python, bash, and Rational Functional Tester (RFT), saving over 80 person-hours per week.
+      \item Developed an automated test results summary web app that provided an instant summary in a central location, reducing data collection time, eliminating human errors, and improving team communication. 
+      \item Optimized and componentized the build, significantly increasing build’s speed (from eight hours to four hours per build), consumability, and maintainability.
+  	\end{itemize}
+  }
+
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Automated the build verification test (BVT) and JUnit test suite using STAF/STAX, Python, bash, batch, and Rational Functional Tester (RFT), saving over 80 person-hours per week\\
+%		\item Developed an automated test results summary web app that provided an instant summary in a central location, reducing data collection time, eliminating human errors, and improving team communication\\
+%		\item Optimized and componentized the build, significantly increasing build's speed (from eight hours to four hours per build), consumability, and maintainability\\
+%	\end{itemize}
+
+
+%%% Extreme Blue at IBM %%%
+	\jobtitle{Extreme Blue (Technical Intern)}{IBM}{May 2006 - August 2006}
+  \jobdescription {
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+      \item Participated in an agile four-person biz/tech team to create an innovative online consultant scheduling system using Java and Ajax. I applied object-oriented design techniques to create a robust backend and beautiful frontend. 
+      \item Performed market research to determine strengths and weaknesses of related products and identify remaining technical problems and approaches\\
+      \item Presented project to over 250 people including senior IBM executives\\
+    \end{itemize}
+  }
+%	\vspace*{-2pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Participated in an agile four-person business/technical team to create an online consultant scheduling system using AJAX and J2EE\\
+%		\item Performed market research to determine strengths and weaknesses of related products and identify remaining technical problems and approaches\\
+%		\item Applied object oriented techniqued to create GUI and back-end Java components, collaborated on MySQL database design
+%		\item Presented project to over 250 people including senior IBM executives\\
+%		\item Created system architecture, high-level and low-level design, and project timeline for proof of concept\\
+% and set-up development environments in a timely manner ensuring all project objectives were met 
+%		\item Provided roadmap including architecture, rationale, and extension points to enable a development team to seamlessly transform proof of concept to a stable tool\\
+%	\end{itemize}
+
+
+%%% RA, TA, Fixer %%%
+	\jobtitle{Research Assistant, Teaching Assistant}{Mobile \& Pervasive Computing Group}{January 2006 - May 2011}
+  \jobdescription {
+  	\begin{itemize} \itemsep -0pt  % reduce space between items
+      \item Researched and developed a usable smart home using Java and Ruby on Rails. I created an end-user programming framework that allowed people of all backgrounds to encode rules. The backend was built on a cutting-edge API architecture. 
+      \item On top of research, I was a teaching assistant for Project Management. In addition to my official jobs, I mentored numerous students and managed several projects, and created several websites.
+  	\end{itemize}
+  }
+
+%	\vspace*{-2pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Researched and developed a RESTful web app with a usable interface to speed the adoption of smart homes. Demonstrated using Java ME and Ruby on Rails\\
+%   \item Proposed an API architecture that would allow web programmers to immediately integrate sensors and actuators into applications\\
+%   \item Created and maintained several sites, including \emph{http://mpc.ece.utexas.edu/}, \emph{http://www.edge.utexas.edu/se/}, \emph{http://www.edge.utexas.edu/sse/} \\
+%		\item Taught and graded the assignments of 60+ working professionals, ultimately being recognized as a great leader and highly effective instructor
+%		\item Researched topics in ubiquitous computing generating at least one paper per semester\\
+%		\item Assisted in proposals that garnered over \$25,000 in outside funding\\
+%		\item Took initiative to create the first group web page: http://mpc.ece.utexas.edu/\\
+%		\item Developed a system utilizing Java, XML, and HTML to quickly update the group's publications listings\\
+%   \item Setup and maintained computing infrastructure including SVN, htaccess, and MediaWiki
+%	\end{itemize}
+
+
+%%% Software Engineer Intern at IBM %%%
+	\jobtitle{Software Engineer (Intern)}{IBM (Tivoli)}{June 2005 - May 2006}
+  \jobdescription {
+  	\begin{itemize} \itemsep -0pt
+      \item Architected and created a silent cross-platform installer for rapid, error-free deployments
+      \item Provided DevOps support allowing developers to focus solely on development
+    \end{itemize}
+  }
+%	\vspace*{-2pt}
+%	\begin{itemize} \itemsep -0pt  % reduce space between items
+%		\item Developed an IBM open source silent installation application (installSTAF) for rapid deployment of STAF on multiple operating systems saving an average of 30 minutes per installation\\	
+%		\item Provided DevOps support allowing developers to focus on programming
+%		\item Assisted in QA (integration and system tests) for multiple product releases 
+%		\item Configured IPv6 on Windows, Linux, AIX, HP-UX, and Solaris-SPARC enabling the group to meet DoD requirements and gain new business\\
+%		\item Performed Tivoli compliance audits ensuring lab assets were properly managed
+%	\end{itemize}
+
+
+%%% Process Engineer, Product Engineer, Campus Liaison for TI %%%
+	\jobtitle{Process Engineer, Product Engineer, Campus Liaison}{Texas Instruments}{August 2003 - May 2005}
+  \jobdescription {
+  	\begin{itemize} \itemsep -0pt
+      \item As an evangelist for Texas Instruments, I scheduled and presented at recruiting events. My efforts increased TI's visibility on campus and led to hundreds of new applicants.
+  		\item Developed new statistical algorithms to determine chip quality, improving yield and increasing profits
+  		\item Collaborated on extensive web app using LAMP stack that automated data analysis methods and common engineering tasks, saving valuable time and increasing the amount of good product
+  		\item Trained engineers on sameness data analysis method improving co-workers' competencies
+  		\item Qualified furnace processes, providing 10\% additional diffusion manufacturing capacity
+  	\end{itemize}
+  }
+
+%	\vspace*{-2pt}
+%	\begin{itemize} \itemsep -0pt %reduce space between items
+%		\item Coordinated, scheduled, and led presentations and recruiting events to increase TI's visibility and applicant pool on the UT campus
+%		\item Evangelized for TI through recruiting presentations and exemplary behavior
+%		\item Provided insight into student-job-seekers' mentality and reported new ways to reach top talent 
+%		\item Assisted TI's employees on campus ensuring their stay went smoothly
+%	\end{itemize}
+
+%    In my time at Texas Instruments I developed statistical algorithms to improve chip yield and quickly identify process problems. These algorithms were integrated into an extensive web app that automated data analysis and common engineering tasks. I also trained full-time engineers on relevant data analysis techniques.
+
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Education
+\header{Education}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Ph.D. Software Engineering --- Adviser: Dr. Christine Julien}{} \hfill \emph{May 2011}{} \\
+	\emph{The University of Texas at Austin}, Austin, TX{} \\
+	Dissertation: ``Simplifying the Programming of Intelligent Environments'' (usability in smart homes)\\
+  \medskip
+	\textbf{M.S.E. Software Engineering}{} \hfill \emph{May 2007}{} \\
+	\emph{The University of Texas at Austin}, Austin, TX{} \\
+	Thesis: ``Developing Collaborative Applications Using Sliverware''\\
+  \medskip
+	\textbf{B.S. Electrical \& Computer Engineering} \hfill \emph{August 2005} \\
+	\emph{The University of Texas at Austin}, Austin, TX\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Leadership
+\header{Leadership Activities}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Creator, Lecturer}, Summer of Learning and Teaching, Blackbaud\\
+	\medskip
+	\textbf{Organizer}, Talk Tuesdays, Blackbaud\\
+	\medskip
+	\textbf{Co-founder, President}, Students in Software Engineering (SSE), The University of Texas at Austin\\
+	\medskip
+	\textbf{Mentor}, Undergraduate and graduate student mentor, The University of Texas at Austin\\
+	\medskip
+	\textbf{Co-founder}, Austin Software Mentorship (ASM)\\
+	\medskip
+	\textbf{Campus Liaison}, Texas Instruments' liaison to The University of Texas at Austin\\
+	\medskip
+	\textbf{President}, Texas Instruments Co-op Social Committee\\
+\end{body}
+
+\medskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+\header{Awards and Honors}
+
+\begin{body}
+	\vspace{14pt}
+	\textbf{Golden Globe for Responsive Redesign of TeamRaiser Donation Forms}, Blackbaud\\
+	\medskip
+	\textbf{Thrust Fellow}, The University of Texas at Austin\\
+	\medskip
+	\textbf{U.S. Patent \#8155948}, ``Method and system to determine user skill using natural language input''\\
+	\medskip
+	\textbf{MCD Fellow}, The University of Texas at Austin\\
+	\medskip
+	\textbf{College Scholar}, The University of Texas at Austin\\
+	\medskip
+	\textbf{Runner-up}, Moore Elementary Recycling Slogan Contest\\
+\end{body}
+
+\end{document}
